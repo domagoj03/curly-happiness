@@ -20,11 +20,11 @@ class address extends Model {
   }
 
   $beforeInsert() {
-    this.createdAt = this.updatedAt = new Date().toISOString();
+    this.createdAt = this.updatedAt = new Date();
   }
 
   $beforeUpdate() {
-    this.updatedAt = new Date().toISOString();
+    this.updatedAt = new Date();
   }
 }
 
